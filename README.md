@@ -37,6 +37,10 @@ Laravel's predictable structure and conventions make it ideal for AI coding agen
 composer require laravel/boost --dev
 
 php artisan boost:install
+
+# without storage:link the uploaded files won’t be publicly accessible
+php artisan storage:link
+
 ```
 
 Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
